@@ -1,0 +1,24 @@
+< 새로운 스케줄 생성 >
+1시간 단위,
+flight plan 상의 스케줄을 0에서 1사의 숫자로 변환
+-> 기존 데이터를 포함하여 어떤 분포(아마 Erlang dist.)에 fit 되는 random number 생성
+-> 각각의 시간으로 변경
+
+
+
+
+< Objective function >
+min. (sum of) airborne holding time
+
+
+
+< Constraint >
+reservoir,
+출발공항에서의 출발시간, 
+도착하는 항공기들의 도착시간은 미리 조정가능 (단 공정하게...)
+현 공항에서 출발하는 항공기들 출발 시간,
+CPS,
+ 
+
+< Algorithm >
+Genetic Algorithm
